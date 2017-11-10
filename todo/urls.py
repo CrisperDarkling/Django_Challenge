@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from todoitem.views import add_item, get_index, edit_item
+from todoitem.views import add_item, get_index, edit_item, toggle_item
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url("^$", get_index),
     url("^add$", add_item),
-    url("^edit/(\d+)$", edit_item)
-    
+    url("^edit/(\d+)$", edit_item),
+    url("^toggle/(\d+)$", toggle_item),
 ]
