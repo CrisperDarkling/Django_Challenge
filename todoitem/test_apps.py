@@ -1,6 +1,6 @@
 from django.apps import apps
-from django.test import TestCase
-from .apps import TodoitemConfig
+from django.test import testCase
+from .apps import todoitemConfig
 
 
 class TodoConfigTest(TestCase):
